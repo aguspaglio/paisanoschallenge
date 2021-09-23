@@ -9,16 +9,16 @@ const Hero = () => {
         <div className={styles.containerHero}>
             <div className={styles.leftHero}>
                 <h1>
-                <img src={titleHero} alt="The Simpsons Title"/>
+                <img src={titleHero} alt="The Simpsons Title" data-aos="fade-right" data-aos-duration="1200"/>
                 </h1>
-                <p>
+                <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                     + Have you been up all night writing code?
                     <br/>
                     - I think i'm blind.
                 </p>
-                <Link className={styles.btnHeroSearch }to="/search">Search Characters</Link>
+                <Link data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400" className={styles.btnHeroSearch} to="/search">Search Characters</Link>
             </div>
-            <div className={styles.rightHero}>
+            <div className={styles.rightHero} data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
                 <img src={simpsonsHero} alt="All Simpsons Hero"/>
             </div>
         </div>
