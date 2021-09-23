@@ -1,0 +1,49 @@
+.container{
+    position: fixed;
+    top: 80px;
+    z-index: 4;
+    width:100vw;
+    height: calc(100vh - 80px);
+}
+.overlayMobile{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:100vw;
+    height: calc(100vh - 80px);
+    animation: opacityOverlay 400ms ease-in;
+}
+.contentBody{
+    position: absolute;
+    width:70vw;
+    height: calc(100vh - 80px);
+    right:0;
+    z-index: 3;
+    background: var(--cardsContainerBackground);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: background 350ms ease-out;
+    animation: rightToLeft 400ms ease-in;
+}
+
+@keyframes rightToLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+
+    }
+}
+
+@keyframes opacityOverlay {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}

@@ -1,0 +1,22 @@
+.cardsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 12rem 0;
+    > div:nth-child(even){
+        margin-left:auto;
+    }
+}
+@media screen and (max-width:1440px){
+    .cardsContainer{
+        grid-template-columns: 1fr;
+        padding:3rem 3rem 0;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .cardsContainer{
+        padding:3rem 1rem 0;
+        max-width:100vw;
+        overflow-x:hidden;
+    }
+}

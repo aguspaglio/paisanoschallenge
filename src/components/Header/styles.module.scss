@@ -1,0 +1,69 @@
+.ulNav {
+  height: 80px;
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--logoColor);
+}
+
+.navItem {
+  list-style: none;
+  margin-right: 2rem;
+  a {
+    text-decoration: none;
+    color: var(--logoColor);
+    font-weight: 600;
+  }
+  svg {
+    width: 40px;
+    height: 40px;
+    fill:var(--logoColor);
+  }
+
+  .logoPaisanos {
+    width: 110px;
+    fill: var(--logoColor);
+  }
+}
+.navList {
+  padding-inline: 12rem;
+  border-bottom: 1px solid var(--clr-gray200);
+  background-color: var(--cardsContainerBackground);
+  transition: background 350ms ease-out;
+}
+/* ----------- LOGO ------------ */
+.logo {
+  margin-right: auto;
+}
+
+/* ----------- NAV SEARCH BUTTON ------------ */
+.btnNavSearch {
+  background-color: var(--clr-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    background-color: var(--clr-primary-hover);
+  }
+  a {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navList {
+    padding-inline: 1rem;
+  }
+  .navItem:not(.logo) {
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+  .btnNavSearch {
+    padding: 1rem 1.5rem;
+    border-radius: 40px;
+  }
+}
