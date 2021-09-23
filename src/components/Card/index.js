@@ -8,6 +8,7 @@ const Card = ({item, index}) => {
     if(index%2){
       setfadeDirection("fade-left");
     }
+  // eslint-disable-next-line
   }, [])
   const handleClick = () =>{
     setIsActive(prevIsActive => !prevIsActive);

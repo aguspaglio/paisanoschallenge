@@ -39,14 +39,15 @@
 @media screen and (max-width: 1440px) {
   .flipCard {
     position: relative;
-    width: 90vw;
     margin: 1.5rem auto;
+    
   }
 }
 @media screen and (max-width: 1000px) {
   .flipCard {
     background-color: transparent;
     perspective: 1000px;
+    width:90vw;
   }
 
   .flipCardInner {

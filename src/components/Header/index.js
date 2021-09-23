@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
-import logoPaisanos from "../../assets/img/paisanos_logo.png";
 import { Spiral as Hamburger } from "hamburger-react";
 import MenuMobile from "../MenuMobile";
 import { ReactComponent as SunIcon } from "../../assets/svg/sun.svg";
